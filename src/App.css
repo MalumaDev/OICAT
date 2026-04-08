@@ -34,6 +34,49 @@ body {
   width: 100vw;
 }
 
+/* ========== Update banner ========== */
+.update-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 16px;
+  background: #2d4a1e;
+  border-bottom: 1px solid #4a7a2e;
+  color: #b8e88a;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.update-banner-link {
+  background: none;
+  border: none;
+  color: #90d050;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  font-size: inherit;
+}
+
+.update-banner-link:hover {
+  color: #b0f070;
+}
+
+.update-banner-dismiss {
+  background: none;
+  border: none;
+  color: #b8e88a;
+  cursor: pointer;
+  padding: 0 4px;
+  font-size: 14px;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+.update-banner-dismiss:hover {
+  opacity: 1;
+}
+
 /* ========== Layout ========== */
 .app-root {
   display: flex;

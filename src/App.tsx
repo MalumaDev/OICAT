@@ -1,11 +1,13 @@
 import { useRef, useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
+import { open } from '@tauri-apps/plugin-opener';
 import { useAppStore } from './store/useAppStore';
 import { ImageList } from './components/ImageList';
 import { ViewPanel } from './components/ViewPanel';
 import { ComparisonSlider } from './components/ComparisonSlider';
 import { ExportModal } from './components/ExportModal';
 import { ViewOptionsDropdown } from './components/ViewOptionsDropdown';
+import { useUpdateCheck } from './hooks/useUpdateCheck';
 import './App.css';
 
 const SIDEBAR_MIN = 140;
@@ -21,6 +23,8 @@ export default function App() {
   const setViewMode = useAppStore((s) => s.setViewMode);
   const resetTransform = useAppStore((s) => s.resetTransform);
   const addView = useAppStore((s) => s.addView);
+
+  const { newVersion, dismissed, dismiss, releasesUrl } = useUpdateCheck();
 
   const [sidebarWidth, setSidebarWidth] = useState(SIDEBAR_DEFAULT);
   const [collapsed, setCollapsed] = useState(false);
@@ -57,6 +61,20 @@ export default function App() {
 
   return (
     <div className="app-root">
+      {newVersion && !dismissed && (
+        <div className="update-banner">
+          <span>
+            A new version <strong>{newVersion}</strong> is available.{' '}
+            <button
+              className="update-banner-link"
+              onClick={() => open(releasesUrl)}
+            >
+              Download
+            </button>
+          </span>
+          <button className="update-banner-dismiss" onClick={dismiss} title="Dismiss">✕</button>
+        </div>
+      )}
       <header className="toolbar">
         <div className="toolbar-left">
           <button
