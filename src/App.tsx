@@ -1,6 +1,6 @@
 import { useRef, useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { open } from '@tauri-apps/plugin-opener';
+import { openUrl } from '@tauri-apps/plugin-opener';
 import { useAppStore } from './store/useAppStore';
 import { ImageList } from './components/ImageList';
 import { ViewPanel } from './components/ViewPanel';
@@ -67,7 +67,7 @@ export default function App() {
             A new version <strong>{newVersion}</strong> is available.{' '}
             <button
               className="update-banner-link"
-              onClick={() => open(releasesUrl)}
+              onClick={() => openUrl(releasesUrl)}
             >
               Download
             </button>

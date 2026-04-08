@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useAppStore } from '../store/useAppStore';
 import { renderSideBySideCanvas, renderSliderCanvas, canvasToUint8Array } from '../utils/exportStatic';

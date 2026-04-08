@@ -18,7 +18,7 @@ function labelOverlay(text: string, x: number, y: number, anchor: 'start' | 'end
       <text x="${rx + pad}" y="${y - pad / 2}" font-size="${fs}" fill="#e8e8e8" font-family="system-ui, sans-serif">${escHtml(text)}</text>`;
 }
 
-function panelLayer(dataUrl: string, tx: number, ty: number, scale: number, w: number, h: number, imgNW: number, imgNH: number): string {
+function panelLayer(dataUrl: string, tx: number, ty: number, scale: number, _w: number, _h: number, imgNW: number, imgNH: number): string {
   const iw = imgNW * scale;
   const ih = imgNH * scale;
   return `<image href="${dataUrl}" x="${tx}" y="${ty}" width="${iw}" height="${ih}" preserveAspectRatio="none" />`;

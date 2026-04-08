@@ -1,4 +1,4 @@
-import { useAppStore, ViewTransform } from '../store/useAppStore';
+import { useAppStore } from '../store/useAppStore';
 
 /**
  * Fit the first-panel image inside its container.
