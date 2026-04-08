@@ -1,0 +1,75 @@
+{
+  "toolbar": {
+    "sideBySide": "Side by Side",
+    "slider": "Slider",
+    "addImages": "Add Images",
+    "resetTransform": "Reset View",
+    "addView": "Add View",
+    "viewOptions": "View Options"
+  },
+  "viewOptions": {
+    "zoom": "Zoom",
+    "fit": "Fit",
+    "fitToWindow": "Fit image to window",
+    "actualSize": "Actual size (1:1)",
+    "columns": "Columns",
+    "auto": "Auto",
+    "columnsAuto": "Auto (flex layout)",
+    "diffOverlay": "Diff Overlay",
+    "threshold": "Threshold",
+    "diff_none": "None",
+    "diff_diff": "Diff",
+    "diff_heatmap": "Heatmap"
+  },
+  "imageList": {
+    "title": "Images",
+    "empty": "No images loaded.\nClick \"Add Images\" to start.",
+    "dragToReorder": "Drag to reorder"
+  },
+  "viewPanel": {
+    "noImage": "No image",
+    "selectImage": "Select image…",
+    "rename": "Rename",
+    "close": "Close view",
+    "changeImage": "Change image",
+    "emptyHint": "Drop an image here or use the selector above"
+  },
+  "comparisonSlider": {
+    "leftImage": "Left image",
+    "rightImage": "Right image",
+    "selectLeft": "Select left image…",
+    "selectRight": "Select right image…"
+  },
+  "export": {
+    "modalTitle": "Export",
+    "type": "Output",
+    "staticImage": "Static Image",
+    "interactiveHtml": "Interactive HTML",
+    "format": "Format",
+    "settings": "Settings",
+    "scale": "Scale",
+    "quality": "Quality",
+    "paper": "Paper",
+    "orientation": "Orientation",
+    "landscape": "Landscape",
+    "portrait": "Portrait",
+    "fit": "Fit",
+    "fitPage": "Fit to page",
+    "actualSize": "Actual size",
+    "showLabels": "Show labels",
+    "htmlHint": "Exports a self-contained HTML file with pan, zoom, and (in slider mode) the interactive comparison slider. Opens in any browser — no dependencies.",
+    "exportBtn": "Export →",
+    "exporting": "Exporting…",
+    "errorNoImages": "Please add at least 2 images before exporting.",
+    "errorOneImage": "Please add at least 2 images before exporting.",
+    "errorSliderImages": "Please select both a left and right image in the slider.",
+    "errorSideBySideImages": "At least 2 panels must have an image assigned."
+  },
+  "common": {
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "rename": "Rename",
+    "newName": "New name"
+  }
+}
